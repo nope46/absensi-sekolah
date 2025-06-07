@@ -138,17 +138,14 @@ class KelasController extends Controller
 
         // Hapus data Murid sesuai dengan id-nya
         $validasi = $request->validate([
-            'captcha' => 'required|captcha'
+            // captcha validation removed
         ]);
-            if($validasi)
-            {
-                Kelas::where('id', $getId)->delete(); 
-            
-                return redirect('/kelas/daftar')->with('deleted', '');            
-            }
+        if(true) // always allow
+        {
+            Kelas::where('id', $getId)->delete(); 
+            return redirect('/kelas/daftar')->with('deleted', '');            
+        }
 
-            else {
-                return redirect('/kelas/daftar/'.$getId)->with('fail', 'Kelas gagal di hapus.');
-            }        
+        return redirect('/kelas/daftar/'.$getId)->with('fail', 'Kelas gagal di hapus.');
     }
 }

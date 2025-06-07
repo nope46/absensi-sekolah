@@ -25,7 +25,7 @@
                     <img src="/img/logo-sekolah.png" style="max-width:10%">
                 </div>
                 <div class="col-md-12 bg-white my-3 border">
-                    <marquee>Selamat datang di SMAN 1 Ungaran. Ini adalah aplikasi untuk Absensi para siswa.</marquee>
+                    <marquee>Selamat datang di MTs NURUL ISLAM. Ini adalah aplikasi untuk Absensi para siswa.</marquee>
                 </div>
             </div>
             <div id="messageContainer"></div>
