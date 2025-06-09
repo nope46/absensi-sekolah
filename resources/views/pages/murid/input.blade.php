@@ -34,9 +34,9 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- left column -->
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           @if(session()->has('success'))                             
           <div class="alert alert-success" role="alert">
             Data Murid Berhasil di Tambahkan.

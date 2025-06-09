@@ -34,8 +34,8 @@
     <section class="content">
         <div class="container-fluid">
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
                     @if (session()->has('success'))
                         <div class="alert alert-success" role="alert">
                             Data Kelas Berhasil di Tambahkan.
