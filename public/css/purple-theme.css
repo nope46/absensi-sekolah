@@ -1,0 +1,91 @@
+/* Custom Purple Theme for MyAbsen */
+body {
+  background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%) !important;
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.dashboard-card, .card, .modal-content {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(123,47,242,0.2);
+  border: none;
+  padding: 2rem 2rem 1.5rem 2rem;
+  transition: box-shadow 0.3s;
+}
+.dashboard-card:hover, .card:hover, .modal-content:hover {
+  box-shadow: 0 16px 48px 0 rgba(123,47,242,0.25);
+}
+.login-logo a, .navbar-brand, .brand-text, .sidebar-dark-primary .brand-link {
+  color: #7b2ff2 !important;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(123,47,242,0.15);
+}
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+  background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(123,47,242,0.15);
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%) !important;
+}
+.form-control:focus {
+  border-color: #7b2ff2 !important;
+  box-shadow: 0 0 0 0.2rem rgba(123,47,242,0.15) !important;
+}
+.login-box-msg, .text-primary, .sidebar-dark-primary .nav-sidebar .nav-link.active {
+  color: #7b2ff2 !important;
+  font-weight: 600;
+}
+.icheck-primary input[type="checkbox"]:checked + label::before {
+  background-color: #7b2ff2 !important;
+  border-color: #7b2ff2 !important;
+}
+.alert-danger {
+  background: #f8d7fa !important;
+  color: #a100a7 !important;
+  border-color: #f3b6f7 !important;
+}
+.alert-success {
+  background: #e6f7ff !important;
+  color: #0070c0 !important;
+  border-color: #b3e0ff !important;
+}
+a {
+  color: #7b2ff2 !important;
+}
+a:hover {
+  color: #f357a8 !important;
+  text-decoration: underline;
+}
+.sidebar-dark-primary {
+  background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%) !important;
+}
+.sidebar-dark-primary .nav-sidebar .nav-link {
+  border-radius: 0.5rem;
+  margin: 0.2rem 0.5rem;
+  transition: background 0.2s;
+  color: #fff !important;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+.sidebar-dark-primary .nav-sidebar .nav-link.active, .sidebar-dark-primary .nav-sidebar .nav-link:hover {
+  background: #fff !important;
+  color: #7b2ff2 !important;
+  text-shadow: none;
+}
+.sidebar-dark-primary .brand-link, .sidebar-dark-primary .brand-text, .sidebar-dark-primary .brand-link .brand-text, .sidebar-dark-primary .brand-link span, .sidebar-dark-primary .brand-link strong, .sidebar-dark-primary .brand-link b {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+/* Add padding to the right of the main content */
+.content-wrapper {
+  padding-right: 2rem !important;
+}
+@media (max-width: 991.98px) {
+  .content-wrapper {
+    padding-right: 1rem !important;
+  }
+}
