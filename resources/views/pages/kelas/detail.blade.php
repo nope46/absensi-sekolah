@@ -5,6 +5,26 @@
 <link rel="stylesheet" href="/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 <link rel="stylesheet" href="/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+<style>
+    .dashboard-card {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+        border-radius: 1rem!important;
+        border: none;
+        margin-bottom: 2rem;
+    }
+    .dashboard-card .card-header {
+        border-radius: 1rem 1rem 0 0!important;
+    }
+    .dashboard-card .card-body {
+        border-radius: 0 0 1rem 1rem!important;
+    }
+    .dashboard-small-box {
+        border-radius: 1rem!important;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10)!important;
+        border: none;
+    }
+</style>
+
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="/beranda">Beranda</a> Kelas / <a href="/kelas/daftar">Daftar Kelas </a>/ Detail</li>
 @endsection
@@ -16,7 +36,7 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="card">
+                    <div class="card dashboard-card">
                         <div class="card-header">
                             <h3 class="card-title pb-3 col-md-10">Data di bawah adalah seluruh murid dari kelas :
                                 <b>{{ $kelas->kelas }}</b>
@@ -78,7 +98,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="card">
+                    <div class="card dashboard-card">
                         <div class="card-header">
                             <h3 class="card-title">Data murid terlambat, tidak hadir, atau ijin kelas :
                                 <b>{{ $kelas->kelas }}</b> | ({{ $hari }}, {{ $tanggal }})

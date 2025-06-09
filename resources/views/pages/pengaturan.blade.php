@@ -2,6 +2,26 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
+<style>
+    .dashboard-card {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+        border-radius: 1rem!important;
+        border: none;
+        margin-bottom: 2rem;
+    }
+    .dashboard-card .card-header {
+        border-radius: 1rem 1rem 0 0!important;
+    }
+    .dashboard-card .card-body {
+        border-radius: 0 0 1rem 1rem!important;
+    }
+    .dashboard-small-box {
+        border-radius: 1rem!important;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10)!important;
+        border: none;
+    }
+</style>
+
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="/beranda">Beranda / Pengaturan</a></li>
 @endsection
@@ -11,7 +31,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card dashboard-card">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"

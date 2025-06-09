@@ -5,10 +5,22 @@
 <link rel="stylesheet" href="/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
 <style>
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .dashboard-card {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+        border-radius: 1rem!important;
+        border: none;
+        margin-bottom: 2rem;
+    }
+    .dashboard-card .card-header {
+        border-radius: 1rem 1rem 0 0!important;
+    }
+    .dashboard-card .card-body {
+        border-radius: 0 0 1rem 1rem!important;
+    }
+    .dashboard-small-box {
+        border-radius: 1rem!important;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10)!important;
+        border: none;
     }
 </style>
 
@@ -24,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-3 col-6">
                     <!-- small box -->
-                    <div class="small-box bg-info">
+                    <div class="small-box bg-info dashboard-small-box">
                         <div class="inner">
                             <h3>{{ $totalMurid }}</h3>
                             <p>Total Murid</p>
@@ -39,7 +51,7 @@
                 <!-- ./col -->
                 <div class="col-lg-3 col-6">
                     <!-- small box -->
-                    <div class="small-box bg-success">
+                    <div class="small-box bg-success dashboard-small-box">
                         <div class="inner">
                             <h3>{{ $absenMasuk }}</h3>
 
@@ -55,7 +67,7 @@
                 <!-- ./col -->
                 <div class="col-lg-3 col-6">
                     <!-- small box -->
-                    <div class="small-box bg-warning">
+                    <div class="small-box bg-warning dashboard-small-box">
                         <div class="inner">
                             <h3>{{ $absenTerlambat }}</h3>
 
@@ -71,7 +83,7 @@
                 <!-- ./col -->
                 <div class="col-lg-3 col-6">
                     <!-- small box -->
-                    <div class="small-box bg-danger">
+                    <div class="small-box bg-danger dashboard-small-box">
                         <div class="inner">
                             <h3>{{ $absenAlpa }}</h3>
 
@@ -91,8 +103,8 @@
 
             <div class="row">
                 <section class="col-md-6 connectedSortable">
-                    <div class="card bg-white">
-                        <div class="card-header bg-success"> Absensi Masuk </div>
+                    <div class="card bg-white dashboard-card">
+                        <div class="card-header bg-success text-white"> Absensi Masuk </div>
                         <div class="card-body table-responsive p-0">
                             <table class="table table-striped text-nowrap table-hover" id="berandaMasuk">
                                 <thead>
@@ -121,9 +133,9 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card bg-white mb-5">
-                        <div class="card-header bg-info"> Grafik </div>
-                        <div class="card">
+                    <div class="card bg-white dashboard-card mb-5">
+                        <div class="card-header bg-info text-white"> Grafik </div>
+                        <div class="card-body">
                             <div class="container">
                                 <canvas id="myChart" class="pt-4"></canvas>
                             </div>
@@ -133,8 +145,8 @@
                 <!-- /.Left col -->
                 <!-- right col (We are only adding the ID to make the widgets sortable)-->
                 <section class="col-md-6 mb-5">
-                    <div class="card bg-white">
-                        <div class="card-header bg-warning"> Absensi Terlambat </div>
+                    <div class="card bg-white dashboard-card">
+                        <div class="card-header bg-warning text-dark"> Absensi Terlambat </div>
                         <div class="card-body table-responsive p-0">
                             <table class="table table-hover text-nowrap" id="berandaTerlambat">
                                 <thead>
@@ -165,8 +177,8 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card bg-white">
-                        <div class="card-header bg-danger"> Tidak Masuk </div>
+                    <div class="card bg-white dashboard-card">
+                        <div class="card-header bg-danger text-white"> Tidak Masuk </div>
                         <div class="card-body table-responsive p-0">
                             <table class="table text-nowrap table-hover" id="berandaIjin">
                                 <thead>
