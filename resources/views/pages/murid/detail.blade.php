@@ -19,7 +19,7 @@
                         Gagal!
                     @endif
                     <!-- Profile Image -->
-                    <div class="card card-primary card-outline">
+                    <div class="card dashboard-card card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
                                 <img class="profile-user-img img-fluid img-circle" src="/img/user4-128x128.jpg"
@@ -77,9 +77,9 @@
                 <!-- /.col -->
                 <div class="col-md-9">
                     <div class="card">
-                        <div class="card-header p-2">
+                        <div class="card-header bg-white border-0 p-2">
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link active" href="#activity"
+                                <li class="nav-item"><a class="nav-link active" style="background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%); color: #fff;" href="#activity"
                                         data-toggle="tab">Absensi</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab">Profil</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Manage</a></li>
@@ -380,20 +380,33 @@
 
 <style>
     .dashboard-card {
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+        box-shadow: 0 0.5rem 1rem rgba(123,47,242,.15)!important;
         border-radius: 1rem!important;
         border: none;
         margin-bottom: 2rem;
     }
     .dashboard-card .card-header {
         border-radius: 1rem 1rem 0 0!important;
+        background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%) !important;
+        color: #fff !important;
+        border: none !important;
     }
     .dashboard-card .card-body {
         border-radius: 0 0 1rem 1rem!important;
     }
     .dashboard-small-box {
         border-radius: 1rem!important;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10)!important;
+        box-shadow: 0 0.5rem 1rem rgba(123,47,242,.10)!important;
         border: none;
+    }
+    .card-primary.card-outline {
+        border-top: 3px solid #7b2ff2 !important;
+    }
+    .nav-pills .nav-link.active {
+        background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%) !important;
+        color: #fff !important;
+    }
+    .nav-pills .nav-link {
+        color: #7b2ff2 !important;
     }
 </style>
