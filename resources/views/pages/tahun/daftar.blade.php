@@ -34,7 +34,7 @@
     <section class="content">
         <div class="container-fluid">
             <!-- /.row -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-6">
                     @if (session()->has('success'))
                         <div class="alert alert-success" role="alert">
